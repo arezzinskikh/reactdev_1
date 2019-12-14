@@ -14,6 +14,7 @@ function App() {
           This is my awesome feature.
         </p>
         <p>My release paragraph.</p>
+        <p>Some bugs fixes.</p>
         <a
           className="App-link"
           href="https://reactjs.org"
