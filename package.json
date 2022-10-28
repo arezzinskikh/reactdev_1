@@ -1,5 +1,5 @@
 {
-  "homepage" : "https://github.com/MaccabiDev/reactdev_1",
+  "homepage": "https://github.com/MaccabiDev/reactdev_1",
   "name": "reactdev_1",
   "version": "0.1.0",
   "private": true,
@@ -10,12 +10,13 @@
     "git-init": "^1.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0"
+    "react-scripts": "3.3.0",
+    "serve": "^14.0.1"
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy" : "gh-pages -d build",
-    "start": "react-scripts start",
+    "deploy": "gh-pages -d build",
+    "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
