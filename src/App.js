@@ -9,7 +9,15 @@ function App() {
     // GET request using fetch inside useEffect React hook
     fetch(`http://${window.location.hostname}:3001/users`)
       .then((response) => response.json())
-      .then((data) => setUsers(data));
+      .then((data) => setUsers(data))
+      .catch(() =>
+        setUsers({
+          first_name: "Mock user first name",
+          last_name: "Mock user last name",
+          age: 45,
+          email: "mock-email@mock.com",
+        })
+      );
 
     // empty dependency array means this effect will only run once (like componentDidMount in classes)
   }, []);
