@@ -16,6 +16,10 @@ app.use(
   })
 );
 
+app.get("/", (req, res) => {
+  res.send(JSON.parse(JSON.stringify(process.env)));
+});
+
 app.get("/users", (req, res) => {
   res.send(jsonMock);
 });
