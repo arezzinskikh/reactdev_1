@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     // GET request using fetch inside useEffect React hook
-    fetch("http://localhost:3001/users")
+    fetch(`http://${window.location.hostname}:3001/users`)
       .then((response) => response.json())
       .then((data) => setUsers(data));
 
